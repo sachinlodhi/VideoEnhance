@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+
 import glob
 
 frameSize = (1280, 720)
