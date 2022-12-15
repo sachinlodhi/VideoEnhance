@@ -1,3 +1,4 @@
+# 2nd File -> Genrate average weighted frome in a video
 import cv2
 import glob
 import natsort
@@ -7,7 +8,6 @@ all_frames = glob.glob(frame_dir+'/*')
 i = 0
 ctr = 1
 final_frames = 'final_frames/'
-avg_frames = 'avg_frames/'
 # sorting the filename
 all_frames = natsort.natsorted(all_frames)
 
@@ -20,4 +20,4 @@ for i in range(len(all_frames)):
     # print(ctr, end=' ')
     cv2.imwrite(final_frames + 'frame_' + str(ctr) + '.jpg', avg_frame)
     ctr+=1
-    # print(ctr)
+    print(ctr)
